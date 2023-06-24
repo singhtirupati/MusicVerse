@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div, input {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.login-container {
+  background: linear-gradient( #5ddcff5e, #3c67e35c, #4e00c070),url('../img/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.login-content-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.login-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 480px;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  padding: 30px 35px;
+  background: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .80));
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+  color: white;
+}
+
+.error-msg {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 120px;
+  width: 120px;
+}
+
+.title-head {
+  margin: 15px 0;
+}
+
+.form-container {
+  border-bottom: 2px solid lightcyan;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  margin-bottom: 20px;
+}
+
+.form-input label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.form-input:nth-last-child(2) {
+  text-align: right;
+}
+
+.form-input input {
+  padding: 12px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: transform 80ms ease-in;
+}
+
+.form-input a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-input a:hover {
+  color: #ff554f;
+}
+
+#submit-btn {
+  width: 110px;
+  color: white;
+  background-color: #ff554f;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+#submit-btn:hover, .signup-container a:hover {
+  background-color: #fe7868;
+}
+
+#submit-btn:active, .signup-container a:active, .form-input input:active {
+  transform: scale(.95);
+}
+
+#submit-btn:focus, .form-input input:focus {
+  outline: none;
+}
+
+.signup-container a {
+  display: inline-block;
+  padding: 13px 13px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #ff554f;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  margin-top: 15px;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+.signup-container {
+  text-align: center;
+}
+
+.signup-container p {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div, input {
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.forget-container {
+  background: linear-gradient( #5ddcff5e, #3c67e35c, #4e00c070),url('../img/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.forget-content-wrap {
+  position: relative;
+  height: 100%;
+}
+
+.forget-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 480px;
+  border-radius: 8px;
+  padding: 30px 35px;
+  transform: translate(0%, -50%);
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, .48), rgba(0, 0, 0, .80));
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+  color: white;
+}
+
+.error-msg {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  height: 120px;
+  width: 120px;
+}
+
+.title-head {
+  margin: 15px 0;
+}
+
+.title-head p {
+  margin: 15px 0;
+}
+
+.form-container {
+  border-bottom: 2px solid lightcyan;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  margin-bottom: 20px;
+}
+
+.form-input label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.form-input input {
+  padding: 12px 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: transform 80ms ease-in;
+}
+
+#submit-btn, .back-container a {
+  width: auto;
+  color: white;
+  background-color: #ff554f;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+
+#submit-btn:hover, .back-container a:hover {
+  background-color: #fe7868;
+}
+
+#submit-btn:active, .form-input input:active, .back-container a:active {
+  transform: scale(.95);
+}
+
+#submit-btn:focus, .form-input input:focus, .back-container a:focus {
+  outline: none;
+}
+
+.back-container {
+  text-align: center;
+}
+
+.back-container a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
